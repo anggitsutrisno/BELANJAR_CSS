@@ -1,21 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>layout</title>
-<style>
-    header{
-        width: 200px;
-        height: 900px;
-        color: aquamarine;
-        
-    }
-</style>
+    <style>
+        header {
+            width: 250px;
+            height: 200px;
+            color: aquamarine;
+            background-color: rgb(23, 81, 81);
+            font-size: 18px;
+        }
+
+        .box {
+            width: 250px;
+            height: 200px;
+            color: aquamarine;
+            background-color: rgb(23, 81, 81);
+            font-size: 18px;
+            /* untuk mengatur jarak elemen untuk menagatur jarak. 1 px untuk keseluruhan 2px untuk mengatur atas bwah kiri kanan, 4 px atas bwah kana kiri */
+            padding: 20px 20px;
+            border-radius: 10px;
+
+        }
+
+        .box1 {
+
+            color: rgb(15, 34, 28);
+            background-color: lightblue;
+            font-size: 18px;
+            border-radius: 10px;
+            /* margin berfungsi untuk mengatur jarak antar elemen */
+            margin: 10px;
+
+        }
+
+        .border {
+            border: 1px solid;
+        }
+
+        .border1 {
+            border: 3px dashed blue;
+        }
+
+        .border2 {
+            border: 3px dotted;
+        }
+
+        .border3 {
+            border: 3px double;
+        }
+
+        .card 
+        {
+            border: 2px solid gray;
+            border-bottom: 10px solid gray;
+            padding: 20px;
+            border-radius: 50px;
+        }
+    </style>
 </head>
+
 <body>
-    <header><h1>ini  materi tentang pembelajaran tantng layout</h1>
+    <header>
+        <h1>ini materi tentang pembelajaran tantng layout</h1>
+        <p style="color: black;">ini adalah contoh</p>
     </header>
-    
+    <article>
+        <p class="box"> ini tentang pembelahar panding</p>
+        <p>ini adalah contoh</p>
+
+        <p class="box1">ini tentang pembelajaran margin</p>
+        <p class="box1">ini tentang pembelajaran margin</p>
+
+        <p class="border">ini adalah border</p>
+        <p class="border1">ini border putus-putus</p>
+        <p class="border2">ini border ttil-titik</p>
+        <p class="border3">ini border garis-garis</p>
+        <div class="card">Ini card</div>
+    </article>
+
 </body>
+
 </html>
