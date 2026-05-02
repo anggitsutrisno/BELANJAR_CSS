@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    /* psuedo element before adalah penambhan elemen sebelum elemen dibuat */
+    #mari2::before{
+        content: "🔥";
+    }
+    /* psuedo element after adalah penambahan elemen setelah dibuat */
+    #mari::after{
+        content:"✅";
+
+    }
+    /* psuedo element  firsyt letter adalah pmengubah  tampilan huruf pertama */
+    #mari3::first-letter{
+        font-size: 50px;
+        color: blue;
+    }
+    /* psuuedo elemen irst line adalah mengubah elemen pada satu baris elemen */
+    #mari4::first-line{
+        color: rgb(166, 27, 176);
+        font-weight:bolder;
+
+    }
+    /* psuedo selection adlah ketika user mau mengeblock element tersebut */
+    #selction::selection{
+        background-color: brown;
+        color: blueviolet;
+    }
+    input::placeholder{
+        color: aqua;
+        text-shadow: 10000px;
+    }
+</style>
+</head>
+
+<body>
+    <p id="mari2">haloo anggit ini before</p>
+    <p id="mari">hallo anggit ini after</p>
+    <p id="mari3">hallo anggit ini ada first leter</p>
+    <p id="mari4">hallo anggit ini adalah first-line awjfhawjkfhajkfhakjfhakjfhajkfasjkfhasjkfhajkfhasjkfhasjkfhaskjfhajskfhasjkfhajkssssssssssssjfh</p>
+<p id="selction">haloo anggit ini adalah psuedo selection</p>
+<input type="text" placeholder="angggit">
+</body>
+</html>

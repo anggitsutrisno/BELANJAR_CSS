@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo</title>
+    <style>
+        #butto {
+            color: blue;
+            background-color: blueviolet;
+            transition: 0.3s;
+        }
+/* psuedo hover adlah dimna keadaan element berubah saat kondisi hanya disetuh */
+        #butto:hover {
+            color: white;
+            background-color: bisque;
+
+        }
+        /* psuedo active dimna saat kondisi elemen diklik */
+        button:active{
+            background-color: gray;
+        }
+        a:hover{
+            color: black;
+        }
+        /* disaat kondisii elemen dipilih */
+        input:focus{
+            background-color: yellow;
+        }
+        p:empty{
+            background-color: blue;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <p>PSEUDO CLASS HOVER</p>
+        <button id="butto">klik butoon ini</button>
+        <a href="index.html">klik link ini</a>
+        <P>PSUDO CLASS ACTIVE</P>
+        <button id="butto1">klik tombol ini</button>
+        <hr>
+        <input type="text" class="1">
+        <input type="text" name="" class="2">
+    <br>
+    <p></p>
+    </article>
+
+</body>
+
+</html>
