@@ -1,40 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position</title>
-<style>
-    /* statis */
-    .box{
-    
-        width: 100px;
-        height: 100px;
-        border: 1px solid rgb(14, 13, 13);
-        top: 20px;
-        left: 200px;
-        background-color: blue;
-        position: static;
-    }
-    p{
-        height: 200px;
-        width: 100px;
-    }
-    .box2{
-        position: relative;
-        background-color: chartreuse;
-        height: 100px;
-        width: 200px;
-        top: 50px;
-        left: 500px;
-        bottom: 2000px;
-    }
-</style>
+    <style>
+        /* statis */
+        .box {
+
+            width: 100px;
+            height: 100px;
+            border: 1px solid rgb(14, 13, 13);
+            top: 20px;
+            left: 200px;
+            background-color: blue;
+            position: static;
+        }
+
+        p {
+            height: 200px;
+            width: 100px;
+        }
+
+        .box2 {
+            position: relative;
+            background-color: chartreuse;
+            height: 100px;
+            width: 200px;
+            top: 1opx;
+            left: 500px;
+
+        }
+
+        .box3 {
+            position: absolute;
+            background-color: chartreuse;
+            height: 100px;
+            width: 200px;
+            top: 10px;
+            right: 10px;
+
+        }
+
+        .relative {
+            position: relative;
+            top: 30px;
+            left: 30px;
+            background: blue;
+        }
+
+        .box4 {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: black;
+            color: white;
+            padding: 10px;
+        }
+
+        .parent {
+            width: 200px;
+            height: 150px;
+            background: lightgray;
+            position: relative;
+            /* ini KUNCI */
+        }
+
+        .child {
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
 </head>
 
 <body>
+
     <div class="box">haloo</div>
     <p>element ini di posisi statis</p>
     <div class="box2">haloo</div>
+    <div class="box3">haloo</div>
+    <div class="box relative">Relative</div><br><br><br>
+    <div class="parent">
+        <div class="child">A</div>
+    </div>
+    <div class="box4">Fixed</div>
 </body>
+
 </html>
